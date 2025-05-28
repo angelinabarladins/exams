@@ -7,5 +7,4 @@ class abexamAdmin(admin.ModelAdmin):
     search_fields = ('title', 'users__email')
     filter_horizontal = ('users',)
     date_hierarchy = 'exam_date'
-
 admin.site.register(abexam, abexamAdmin)
